@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <title>freeCodeCamp Survey Form</title>
+</head>
+<body>
+  <div class="title-description-container"><h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p></div>
+  
+  <form id="survey-form" method="post">
+    <fieldset>
+      <label id="name-label" for="name">YOUR NAME:
+        <input required type="text" id="name" placeholder="Your name goes here">
+      </label>
+      <label id="email-label" for="email">YOUR EMAIL:
+        <input required type="email" id="email" placeholder="Your email goes here">
+      </label>
+      <label id="number-label" for="age">YOUR AGE:
+        <input id="number" type="number" value="age" name="age" min="13" max="120" placeholder="Your age goes here"/>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>WHICH OPTION BEST DESCRIBES YOUR CURRENT ROLE?</legend>
+      <label>
+        <select id="dropdown">
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full time job</option>
+          <option value="3">Full time learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>WOULD YOU RECOMMEND FREECODECAMP TO A FRIEND?</legend>
+      <label for="option-definitely">Definitely
+        <input class="inline" id="option-definitely" type="radio" name="option" value="1" checked/>
+      </label>
+      <label for="option-maybe">Maybe
+        <input class="inline" id="option-maybe" type="radio" name="option" value="2"/>
+      </label>
+      <label for="option-not-sure">Not sure
+        <input class="inline" id="option-not-sure" type="radio" name="option" value="3"/>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>WHAT WOULD YOU LIKE TO SEE IMPROVED? (CHECK ALL THAT APPLY)</legend>
+      <label>Front-end Projects
+        <input class="inline" name="improve" type="checkbox" id="front-end" value="Front-end Projects"/>
+      </label>
+      <label>Back-end Projects
+        <input class="inline" name="improve" type="checkbox" id="back-end" value="Back-end Projects"/>
+      </label>
+      <label>Data Visualization
+        <input class="inline" name="improve" type="checkbox" id="data-visualization" value="Data Visualization"/>
+      </label>
+      <label>Challenges
+        <input class="inline" name="improve" type="checkbox" id="challenges" value="Challenges"/>
+      </label>
+      <label>Open Source Community
+        <input class="inline" name="improve" type="checkbox" id="open-cource-community" value="Open Source Community"/>
+      </label>
+      <label>Gitter help rooms
+        <input class="inline" class="inline" name="improve" type="checkbox" id="gitter-help-rooms" value="Gitter help rooms"/>
+      </label>
+      <label>Videos
+        <input name="improve" class="inline" type="checkbox" id="videos" value="Videos"/>
+      </label>
+      <label>City Meetups
+        <input class="inline" name="improve" type="checkbox" id="city-Meetups" value="City Meetups"/>
+      </label>
+      <label>Wiki
+        <input class="inline" name="improve" type="checkbox" id="wiki" value="Wiki"/>
+      </label>
+      <label>Forum
+        <input class="inline" name="improve" type="checkbox" id="forum" value="Forum"/>
+      </label>
+      <label>Additional Courses
+        <input class="inline" name="improve" type="checkbox" id="additional-Courses" value="Additional Courses"/>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>ANY COMMENTS OR SUGGESTIONS?</legend>
+      <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+    </fieldset>
+    <input type="submit" value="SUBMIT!" id="submit"/>
+  </form>
+  <footer>
+    <p>Desafio final do curso de Responsive Web Design do Free Code Camp. Feito por <a href="www.linkedin.com/in/guilherme-roberto-dos-passos">Guilherme</a>.</p>
+  </footer>
+</body>
+</html>
