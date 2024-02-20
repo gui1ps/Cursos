@@ -1,0 +1,52 @@
+body{
+    background-color: #B1F4FF;
+    background-size: 500px;
+}
+.bnt{
+    font-size: 1rem;
+}
+/* Responsive Header*/
+header{
+    height: 50vh;
+}
+#header-container{
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+#header_container1--logo{
+    margin-bottom: 25px;
+
+}
+#header_container2--ul{
+    flex-direction: column;
+    align-items: center;
+}
+#header_container2--ul li{
+    font-size: 1rem;
+    margin:7px 0;
+}
+/*Responsive Header end*/
+/*Responsive Main */
+#main_container{
+    flex-direction: column;
+}
+#main_container_div1{
+    width: 100%;
+    align-items: center;
+}
+#main_container_div1--title{
+    margin-top: 20px;
+    text-align: center;
+}
+#main_container_div1 h2{
+    margin: auto;
+    padding: 15px 0;
+}
+#main_container_div1 p{
+    text-align: justify;
+    margin: auto;
+}
+/*Responsive Main end*/
+
+
