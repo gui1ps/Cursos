@@ -15,7 +15,7 @@ body {
 #survey-form {
   width: 70%;
   max-width: 568px;
-  min-width: 300px;
+  min-width: 200px;
   margin: 20px auto;
   border: 1px solid black;
   padding: 2em;
@@ -43,6 +43,7 @@ fieldset {
   border: none;
   padding: 1rem 0;
   margin: 10px 0;
+  width: 100%;
 }
 
 label, legend {
@@ -52,9 +53,14 @@ label, legend {
   font-weight: 600;
 }
 
+label{
+  color:#3D2667;
+  width: 100%;
+}
+
 input, textarea, select {
   margin: 10px 0 0 0;
-  width: 100%;
+  width:95%;
   min-height: 2em;
   border: 2px solid #3e233e;
   border-radius: 3px;
@@ -65,9 +71,9 @@ input, textarea, select {
 }
 
 input[type="text"], input[type="number"], input[type="email"], textarea, #submit, select {
-  box-shadow: 2px 3px 0px 0px rgb(0, 0, 0);
-  -moz-box-shadow: 2px 4px 0px 0px rgb(0, 0, 0);
-  box-shadow: 2px 3px 0px 0px rgb(0, 0, 0);
+  -webkit-box-shadow: 2px 3px 0px 0px rgba(62,35,62,1);
+  -moz-box-shadow:2px 3px 0px 0px rgba(62,35,62,1);
+  box-shadow: 2px 3px 0px 0px rgba(62,35,62,1);
 }
 
 input::placeholder {
@@ -87,6 +93,9 @@ input::placeholder {
   background: transparent;
   font-weight: 800;
   transition: all ease-in-out 0.3s;
+  box-shadow: 2px 3px 0px 0px rgb(0, 0, 0);
+  -moz-box-shadow: 2px 4px 0px 0px rgb(0, 0, 0);
+  box-shadow: 2px 3px 0px 0px rgb(0, 0, 0);
 }
 
 #submit:hover {
