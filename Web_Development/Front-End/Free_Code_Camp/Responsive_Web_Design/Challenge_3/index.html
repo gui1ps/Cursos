@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projeto 3</title>
+  <link rel="stylesheet" href="./assets/styles/styles.css"> 
+</head>
+<body>
+  <nav id="navbar" class="min-width-25">
+    <header class="title"><h1>Mini documentação do Java Script</h1></header>
+    <a class="nav-link" href="#JavaScript:_Uma_Introdução">JavaScript: Uma Introdução</a>
+    <a class="nav-link" href="#Variáveis_e_Tipos_de_Dados">Variáveis e Tipos de Dados</a>
+    <a class="nav-link" href="#Estruturas_de_Controle_de_Fluxo">Estruturas de Controle de Fluxo</a>
+    <a class="nav-link" href="#Funções">Funções</a>
+    <a class="nav-link" href="#Eventos">Eventos</a>
+    <a class="nav-link" href="#Manipulação_do_DOM">Manipulação do DOM</a>
+    <a class="nav-link" href="#Referências">Referências</a>
+  </nav>
+  <main id="main-doc" class="min-width-75">
+    <section class="main-section" id="JavaScript:_Uma_Introdução">
+      <header class="h2">JavaScript: Uma Introdução</header>
+      <p>JavaScript é uma linguagem de programação de alto nível, leve e interpretada, utilizada principalmente para desenvolvimento web. Foi originalmente desenvolvida por Brendan Eich na Netscape em 1995, com o nome de "LiveScript", mas logo foi renomeada para JavaScript.</p>
+      <p>Características Principais:</p>
+      <ul>
+        <li><span class="bolder">Linguagem de Script</span>: JavaScript é uma linguagem de script, o que significa que os comandos são executados linha por linha, sem a necessidade de compilação.</li>
+        <li><span class="bolder">Multiplataforma</span>: Pode ser executada em diferentes plataformas, incluindo navegadores web, servidores, dispositivos móveis, entre outros.</li>
+        <li><span class="bolder">Interpretação</span>: O código JavaScript é executado diretamente no navegador do cliente, o que o torna mais flexível e dinâmico.</li>
+        <li><span class="bolder">Client-Side e Server-Side</span>: Pode ser usado tanto no lado do cliente (navegador) quanto no lado do servidor (Node.js).</li>
+      </ul>
+      <p>Utilização Principal:</p>
+      <ul>
+        <li><span class="bolder">Desenvolvimento Web</span>: JavaScript é amplamente utilizado para criar interatividade em páginas da web, incluindo animações, validação de formulários, efeitos visuais dinâmicos, entre outros.</li>
+        <li><span class="bolder">Desenvolvimento de Aplicativos Web</span>: Frameworks como React, Angular e Vue.js permitem o desenvolvimento de aplicativos web robustos e escaláveis.</li>
+        <li><span class="bolder">Desenvolvimento de Jogos</span>: Com bibliotecas como Phaser e Three.js, é possível criar jogos interativos diretamente no navegador.</li>
+        <li><span class="bolder">Desenvolvimento de Aplicativos Móveis</span>: Frameworks como React Native e Ionic permitem o desenvolvimento de aplicativos móveis usando JavaScript.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Variáveis_e_Tipos_de_Dados">
+      <header class="h2">Variáveis e Tipos de Dados</header>
+      <p>JavaScript é uma linguagem de programação de tipagem dinâmica, o que significa que você não precisa especificar explicitamente o tipo de uma variável.
+<br>
+Exemplo de Declaração de Variáveis:</p>
+<code>// Declaração de variáveis
+let nome = "João";
+const idade = 25;
+var altura = 1.75;
+
+// Tipos de dados
+let texto = "Isso é uma string";
+let numero = 42;
+let booleano = true;
+let array = [1, 2, 3];
+let objeto = { nome: "Maria", idade: 30 };
+</code>
+    </section>
+    <section class="main-section" id="Estruturas_de_Controle_de_Fluxo">
+      <header class="h2">Estruturas de Controle de Fluxo</header>
+      <p>JavaScript oferece várias estruturas de controle de fluxo para executar diferentes blocos de código com base em condições.
+<br>
+Exemplo de Estruturas de Controle de Fluxo:</p>
+<code>// If-else
+let hora = 12;
+if (hora < 12) {
+    console.log("Bom dia!");
+} else if (hora < 18) {
+    console.log("Boa tarde!");
+} else {
+    console.log("Boa noite!");
+}
+
+// Loop while
+let contador = 0;
+while (contador < 5) {
+    console.log(contador);
+    contador++;
+}
+
+// Loop for
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+</code>
+    </section> 
+    <section class="main-section" id="Funções">
+      <header class="h2">Funções</header>
+      <p>As funções permitem reutilizar blocos de código em seu programa.
+<br>
+Exemplo de Declaração de Função:</p>
+<code>// Declaração de função
+function saudacao(nome) {
+    return "Olá, " + nome + "!";
+}
+
+// Chamada de função
+console.log(saudacao("Ana")); // Saída: Olá, Ana!
+</code>
+    </section>
+    <section class="main-section" id="Eventos">
+      <header class="h2">Eventos</header>
+      <p>JavaScript é frequentemente usado para interagir com elementos HTML, respondendo a eventos do usuário.
+<br>
+Exemplo de Tratamento de Eventos:</p>
+<code>
+        // Adicionando um evento de clique ao botão
+        document.getElementById("meuBotao").addEventListener("click", function() {
+            alert("Botão clicado!");
+        });
+</code>
+    </section> 
+    <section class="main-section" id="Manipulação_do_DOM">
+      <header class="h2">Manipulação do DOM</header>
+      <p>JavaScript pode ser usado para manipular elementos HTML e CSS no Document Object Model (DOM).
+<br>
+Exemplo de Manipulação do DOM:<p/>
+<code> function alterarTexto() {
+            document.getElementById("meuDiv").innerText = "Novo texto!";
+        }</code>
+    </section> 
+    <section class="main-section" id="Referências">
+      <header class="h2">Referências</header>
+      <p>Toda a documentação desta página doi retirada de <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">MDN</a>.<p/>
+    </section> 
+  </main>
+</body>
+</html>

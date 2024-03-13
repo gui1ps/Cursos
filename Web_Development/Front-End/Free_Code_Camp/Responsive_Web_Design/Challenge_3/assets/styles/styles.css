@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+*{
+  box-sizing:border-box;
+}
+html,body{
+  height:100%;
+}
+body{
+  margin:0;
+  padding:0;
+  display:flex;
+  font-family: "Comfortaa", sans-serif;
+  overflow:hidden;
+}
+.min-width-75{
+  min-width:75%;
+}
+.min-width-25{
+  min-width:25%;
+}
+#navbar{
+  border-right:1px solid black;
+  border-bottom:1px solid black;;
+  min-height:100vh;
+  position:;
+}
+.title{
+  padding:0px 20px;
+  border-bottom:1px solid black;
+}
+.nav-link{
+  display:block;
+  width:100%;
+  padding: 10% 20px;
+  text-decoration:none;
+  color:#000;
+  border-bottom:1px solid black;
+}
+.nav-link:last-of-type{
+  border:none;
+  padding-bottom: 20px;
+}
+#main-doc{
+  padding:0px 20px;
+  height:100vh;
+  overflow:scroll;
+  overflow-x:hidden;
+}
+.h2{
+  font-weight:800;
+  font-size:25px;
+  margin:15px 0;
+}
+.bolder{
+  font-weight:800;
+}
+code{
+  background-color:grey;
+  padding:3px;
+  border-radius:1px;
+}
+@media screen and (min-width: 1300px) {
+    .nav-link {
+        padding: 28px 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav-link {
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-link {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .nav-link {
+        padding: 5px 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .nav-link {
+        padding: 3px 20px;
+    }
+}
