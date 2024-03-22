@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap");
+:root {
+  --main-font: "Edu NSW ACT Foundation", cursive;
+  --primary-font-color: #000;
+  --primary-bg-color: #fde8b3;
+  --secondary-bg-color: #e8d18d;
+  --third-bg-color: #adb191;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+#header {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: var(--primary-bg-color);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  user-select: none;
+  position: fixed;
+  z-index: 2;
+}
+#header #navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header #navbar #link-list {
+  display: flex;
+  list-style: none;
+  place-items: center;
+  gap: 20px;
+}
+#header #navbar #link-list .link-item {
+  cursor: pointer;
+  color: var(--primary-color);
+  font-size: 4vh;
+  text-decoration: none;
+}
+#main #welcome-section {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  padding: 0 20px;
+  background-color: var(--secondary-bg-color);
+  overflow: hidden;
+}
+#main #welcome-section * {
+  max-width: 100%;
+}
+#main #welcome-section .circle {
+  width: 50%;
+  height: 100%;
+  background-color: #df771e;
+  border-radius: 50%;
+  position: absolute;
+  top: -50%;
+  left: -25%;
+  z-index: 0;
+}
+#main #welcome-section #presentation {
+  position: relative;
+  z-index: 1;
+}
+
+#main #welcome-section #presentation-subtitle {
+  font-size: 2vw;
+}
+#main #welcome-section .photo-container {
+  position: relative;
+  display: inline-block;
+  height: 50%;
+  user-select: none;
+}
+#main #welcome-section .photo-container #photo {
+  z-index: 0;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+#main #projects {
+  background-color: var(--third-bg-color);
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  height: auto;
+}
+#main #projects #projects-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  padding: 0 20px;
+}
+#main #projects #projects-gallery .project {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in;
+}
+#main #projects #projects-gallery .project:hover {
+  transform: scale(1.01);
+}
+.project-tumb {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.project-tile {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--third-font-color);
+}
+#main #contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-bg-color);
+  padding: 0 20px;
+}
+#main #contacts #contacts-title {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+#main #contacts #links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+}
+#main #contacts #links .profile-link {
+  font-size: 50px;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+  color: var(--primary-font-color);
+}
+#main #contacts #links .profile-link:hover {
+  transform: translateY(20px);
+}
+#footer {
+  background-color: var(--third-bg-color);
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+#footer .footer-text {
+  font-weight: 700;
+  font-size: 1em;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  padding: calc(20px + 4vh) 0;
+}
+.title {
+  text-align: center;
+  font-size: 3vw;
+  margin: 25px 0;
+}
+
+@keyframes flower {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #main #welcome-section {
+    flex-direction: column;
+  }
+  #main #welcome-section #presentation {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  .title {
+    font-size: 3em;
+  }
+  #main #welcome-section #presentation #presentation-subtitle {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 2em;
+  }
+  #main #welcome-section #presentation #presentation-subtitle {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 877px) {
+  .title {
+    font-size: 4em;
+  }
+  #main #welcome-section #presentation #presentation-subtitle {
+    font-size: 3em;
+  }
+}
+
